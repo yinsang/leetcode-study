@@ -44,4 +44,4 @@ export const mergeSort = (arr)=>{
 
   }
 }
-mergeSort([4,3,2,1])
+// mergeSort([4,3,2,1])
