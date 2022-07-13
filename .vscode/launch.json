@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "/Users/weiyinpeng/Documents/study-code/leetcode-study/src/mergeSort/index.ts",
+      "program": "/Users/weiyinpeng/Documents/study-code/leetcode-study/src/arrayRevertCount/index.ts",
       "preLaunchTask": "tsc: build - tsconfig.json",
       "outFiles": [
         "${workspaceFolder}/out/**/*.js"

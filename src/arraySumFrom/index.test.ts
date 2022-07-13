@@ -1,4 +1,4 @@
-import {arraySumFrom, arraySumFrom_preArray} from './arraySumFrom'
+import {arraySumFrom, arraySumFrom_preArray} from '.'
 
 test('arraySumFrom', () => {
   expect(arraySumFrom([1,2,3], 0,0)).toBe(1);

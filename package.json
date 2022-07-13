@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "wo": "jest --watch /Users/weiyinpeng/Documents/study-code/leetcode-study/src/mergeSort/index.test.ts",
-    "w": "jest --watchAll",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wo": "jest  --watch /Users/weiyinpeng/Documents/study-code/leetcode-study/src/mergeSort/index.test.ts",
+    "w": "jest --clearCache && jest --watchAll",
+    "jest": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.18.2",
     "@types/jest": "^28.1.3",
+    "eslint": "^8.19.0",
     "jest": "^28.1.1"
   }
 }

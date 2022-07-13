@@ -1,1 +1,0 @@
-const result = [1,2].map(item=>item*3)
