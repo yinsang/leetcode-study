@@ -1,18 +1,22 @@
-import {dutchFlag, dutchFlag1} from '.'
+import {dutchFlag} from '.'
 const isDutchFlagArray = (arr, flag)=>{
-  const lessCounts = arr.reduce((acc, curr)=>{
-    if(curr<=flag){
-      acc+=1;
+  const lessEqualCounts = arr.reduce((acc, curr)=>{
+    if(curr<flag){
+      acc[0]+=1;
+    } 
+    if(curr===flag){   
+         acc[1]+=1;
     }
     return acc;
-  }, 0)
-  const lessEqualItemsRight  = arr.slice(0,lessCounts ).every(item=>item<=flag)
-  const bigItemsRight  = arr.slice(lessCounts+1 ).every(item=>item>flag)
-  return lessEqualItemsRight && bigItemsRight
+  }, [0,0])
+  const lessItemsRight  = arr.slice(0,lessEqualCounts[0] ).every(item=>item<flag)
+  const equalRight = arr.slice(lessEqualCounts[0],lessEqualCounts[1]  ).every(item=>item===flag)
+  const bigItemsRight  = arr.slice(lessEqualCounts[0]+ lessEqualCounts[1] ).every(item=>item>flag)
+  return lessItemsRight &&  equalRight && bigItemsRight
 }
 test('', () => {
 
-  let testCount=20;
+  let testCount=200;
   const maxArrayValue =10;
   const arrayLength = 10;
 
@@ -22,8 +26,6 @@ test('', () => {
     const flag = Math.floor(Math.random() * 10);
    try{
       expect(isDutchFlagArray(dutchFlag(arr, flag),flag)).toBe(true)
-      expect(isDutchFlagArray(dutchFlag1(arr, flag),flag)).toBe(true)
-      
     }catch(e){
         console.log("error key",copyArr,arr, flag )
         throw e;
