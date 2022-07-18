@@ -4,15 +4,27 @@
 # 第几集对应的题
 ## 一
 [数组中从i到j的数字和](./src/arraySumFrom)
+
 [数组中出现奇数次的某个数、数组中出现奇数次的某两个数](./src/XOR)
+
 [局部最小](./src/partMini)
+
 [插入排序](./src/insertSort)
+
 ## 二
 [数组小和问题](./src/miniSum)
+
 [归并排序](./src/mergeSort)
+
 [逆序数](./src/arrayRevertCount)
+
 [荷兰国旗问题一](./src/DutchFlag-Q1) 两种思路
+
 [荷兰国旗问题二](./src/DutchFlag-Q2) 
+
 [快速排序1.0](./src/insertSort1.0) 
+
 [快速排序2.0](./src/insertSort2.0) 
+
 [快速排序3.0](./src/insertSort3.0) 
+
