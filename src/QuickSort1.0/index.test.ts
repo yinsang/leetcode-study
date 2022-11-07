@@ -4,7 +4,7 @@ it("", () => {
   let maxCount = 10;
 
   for (let index = 0; index < maxCount; index++) {
-    const arr = Array.from(new Array(5), () =>
+    const arr = Array.from(new Array(Math.floor(Math.random() * 100)), () =>
       parseInt(String(Math.random() * 10))
     );
     const copyArr = [...arr];
