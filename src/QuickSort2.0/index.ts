@@ -6,17 +6,20 @@ const fastSort = (arr) => {
     return arr;
   }
   const left: number[] = [];
+  const middle: number[] = [];
   const right: number[] = [];
   const lastItem = arr[arr.length - 1];
   for (let index = 0; index < arr.length - 1; index++) {
     const element = arr[index];
-    if (element <= lastItem) {
+    if (element < lastItem) {
       left.push(element);
+    } else if (element === lastItem) {
+      middle.push(element);
     } else {
       right.push(element);
     }
   }
-  return fastSort(left).concat([lastItem], fastSort(right));
+  return fastSort(left).concat(middle.concat(lastItem), fastSort(right));
 };
 
 export { fastSort };
