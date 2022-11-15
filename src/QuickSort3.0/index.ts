@@ -1,4 +1,4 @@
-const fastSort1 = (arr) => {
+const quickSort3 = (arr) => {
   // 0. 以最后一个为基准flag，做左右分区排序
   // 1. 使flagIndx的左侧<=flag,右侧>flag
   // 2. 递归左边和右边，返回最终的值
@@ -19,10 +19,10 @@ const fastSort1 = (arr) => {
       right.push(element);
     }
   }
-  return fastSort1(left).concat(middle, fastSort1(right));
+  return quickSort3(left).concat(middle, quickSort3(right));
 };
 
-export { fastSort1 };
+export { quickSort3 };
 const swap = (arr, x, y) => {
   if (x === y) {
     return;
@@ -60,15 +60,15 @@ const partition = (arr, L, R) => {
   };
 };
 /** 课程中所说的3.0版本，在原arr上换位置 */
-const fastSort = (arr, L = 0, R = arr.length - 1) => {
+const quickSort3_1 = (arr, L = 0, R = arr.length - 1) => {
   // if(){}
   if (R > L) {
     const randomIndex = Math.floor(Math.random() * (R - L));
     swap(arr, L + randomIndex, R);
     const { leftIndex, rightIndex } = partition(arr, L, R);
-    fastSort(arr, L, leftIndex - 1);
-    fastSort(arr, rightIndex, R);
+    quickSort3_1(arr, L, leftIndex - 1);
+    quickSort3_1(arr, rightIndex, R);
     return arr;
   }
 };
-export { fastSort };
+export { quickSort3_1 };

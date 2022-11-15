@@ -1,6 +1,6 @@
-import { fastSort } from "./index";
+import { quickSort } from "./index";
 it("", () => {
-  expect(fastSort([3, 2, 1])).toEqual([1, 2, 3]);
+  expect(quickSort([3, 2, 1])).toEqual([1, 2, 3]);
   let maxCount = 10;
 
   for (let index = 0; index < maxCount; index++) {
@@ -9,6 +9,6 @@ it("", () => {
     );
     const copyArr = [...arr];
     console.log(arr, "arr");
-    expect(fastSort(arr)).toEqual(copyArr.sort());
+    expect(quickSort(arr)).toEqual(copyArr.sort());
   }
 });

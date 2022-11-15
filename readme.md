@@ -1,11 +1,13 @@
-# 跟着左神学 LeetCode-JavaScript 版本
+# 一周刷爆 LeetCode，算法大神左神教程的 **JavaScript** 版本
+
+## 原视频地址
 
 [一周刷爆 LeetCode，算法大神左神（左程云）耗时 100 天打造算法与数据结构基础到高级全家桶教程，直击 BTAJ 等一线大厂必问算法面试题真题详解
 ](https://www.bilibili.com/video/BV13g41157hK?spm_id_from=333.999.0.0&vd_source=caa0dbc390860e23b7561e77da114463)
 
 # 第几集对应的题
 
-## 一
+## 一 认识复杂度和简单排序算法
 
 [数组中从 i 到 j 的数字和](./src/arraySumFrom/index.ts)
 
@@ -15,7 +17,7 @@
 
 [插入排序](./src/insertSort/index.ts)
 
-## 二
+## 二 认识 O(NlogN)的排序
 
 [数组小和问题](./src/miniSum/index.ts)
 
@@ -34,3 +36,7 @@
 [快速排序 2.0](./src/QuickSort2.0/index.ts)
 
 [快速排序 3.0](./src/QuickSort3.0/index.ts)
+
+## 三 详解桶排序以及排序内容大总结
+
+[桶排序](./src/HeapSort/index.ts)

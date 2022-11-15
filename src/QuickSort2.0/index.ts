@@ -1,4 +1,4 @@
-const fastSort = (arr) => {
+const quickSort2 = (arr) => {
   // 0. 以最后一个为基准flag，做左右分区排序
   // 1. 使flagIndx的左侧<=flag,右侧>flag
   // 2. 递归左边和右边，返回最终的值
@@ -19,7 +19,7 @@ const fastSort = (arr) => {
       right.push(element);
     }
   }
-  return fastSort(left).concat(middle.concat(lastItem), fastSort(right));
+  return quickSort2(left).concat(middle.concat(lastItem), quickSort2(right));
 };
 
-export { fastSort };
+export { quickSort2 };

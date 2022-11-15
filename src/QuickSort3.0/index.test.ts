@@ -1,6 +1,6 @@
-import { fastSort1, fastSort } from "./index";
+import { quickSort3, quickSort3_1 } from "./index";
 it("", () => {
-  expect(fastSort1([3, 2, 1])).toEqual([1, 2, 3]);
+  expect(quickSort3([3, 2, 1])).toEqual([1, 2, 3]);
   let maxCount = 10;
 
   for (let index = 0; index < maxCount; index++) {
@@ -9,12 +9,12 @@ it("", () => {
       parseInt(String(Math.random() * 10))
     );
     const copyArr = [...arr];
-    expect(fastSort1(arr)).toEqual(copyArr.sort());
+    expect(quickSort3(arr)).toEqual(copyArr.sort());
   }
 });
 
 it("", () => {
-  expect(fastSort([3, 2, 1])).toEqual([1, 2, 3]);
+  expect(quickSort3_1([3, 2, 1])).toEqual([1, 2, 3]);
   let maxCount = 10;
 
   for (let index = 0; index < maxCount; index++) {
@@ -23,6 +23,6 @@ it("", () => {
     );
     const copyArr = [...arr];
     console.log(arr, "arr");
-    expect(fastSort(arr)).toEqual(copyArr.sort());
+    expect(quickSort3_1(arr)).toEqual(copyArr.sort());
   }
 });

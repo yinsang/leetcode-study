@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "wo": "jest  --watch /Users/weiyinpeng/Documents/study-code/leetcode-study/src/mergeSort/index.test.ts",
+    "wo": "jest  --watch /Users/weiyinpeng/Documents/study-code/leetcode-study/src/HeapSort/index.test.ts",
     "w": "jest --clearCache && jest --watchAll",
     "jest": "jest"
   },
