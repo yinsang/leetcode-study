@@ -39,4 +39,5 @@
 
 ## 三 详解桶排序以及排序内容大总结
 
-[桶排序](./src/HeapSort/index.ts)
+[大根堆排序](./src/HeapSort/index.ts)
+[小根堆排序, 近似排好序的数组，在K范围内有序](./src/HeapSort_AlmostSortArray/index.ts)
