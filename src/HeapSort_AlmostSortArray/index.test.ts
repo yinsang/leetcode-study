@@ -1,6 +1,6 @@
 import { HeapSort_AlmostSortArray } from "./index";
 it("", () => {
-  expect(HeapSort_AlmostSortArray([3, 2, 1],2)).toEqual([1, 2, 3]);
+  expect(HeapSort_AlmostSortArray([3, 2, 1], 2)).toEqual([1, 2, 3]);
   expect(HeapSort_AlmostSortArray([8, 2, 1, 9], 3)).toEqual([1, 2, 8, 9]);
 
   let maxCount = 10;
@@ -10,7 +10,8 @@ it("", () => {
       parseInt(String(Math.random() * 10))
     );
     const copyArr = [...arr];
-    console.log(arr, "arr");
-    expect(HeapSort_AlmostSortArray(arr, arr.length-1)).toEqual(copyArr.sort());
+    expect(HeapSort_AlmostSortArray(arr, arr.length - 1)).toEqual(
+      copyArr.sort()
+    );
   }
 });

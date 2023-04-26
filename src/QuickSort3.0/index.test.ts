@@ -22,7 +22,6 @@ it("", () => {
       parseInt(String(Math.random() * 10))
     );
     const copyArr = [...arr];
-    console.log(arr, "arr");
     expect(quickSort3_1(arr)).toEqual(copyArr.sort());
   }
 });

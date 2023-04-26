@@ -9,13 +9,13 @@
 
 ## 一 认识复杂度和简单排序算法
 
-[数组中从 i 到 j 的数字和](./src/arraySumFrom/index.ts)
+[数组中从 i 到 j 的数字和，包括 i 和 j](./src/arraySumFrom/index.ts)
 
-[数组中出现奇数次的某个数、数组中出现奇数次的某两个数](./src/XOR/index.ts)
+[数组中出现奇数次的某个数 - 00:50 、数组中出现奇数次的某两个数 - 00:56](./src/XOR/index.ts)
+
+[插入排序 1:14](./src/insertSort/index.ts)
 
 [局部最小](./src/partMini/index.ts)
-
-[插入排序](./src/insertSort/index.ts)
 
 ## 二 认识 O(NlogN)的排序
 
@@ -40,4 +40,4 @@
 ## 三 详解桶排序以及排序内容大总结
 
 [大根堆排序](./src/HeapSort/index.ts)
-[小根堆排序, 近似排好序的数组，在K范围内有序](./src/HeapSort_AlmostSortArray/index.ts)
+[小根堆排序, 近似排好序的数组，在 K 范围内有序](./src/HeapSort_AlmostSortArray/index.ts)

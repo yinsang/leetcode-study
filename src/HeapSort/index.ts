@@ -69,7 +69,6 @@ const heapSort = (array) => {
   for (let index = 1; index < array.length; index++) {
     heapInsert(array, index);
   }
-  console.log("afterInset", array);
   let heapSize = array.length - 1;
   while (heapSize > 0) {
     swap(array, 0, heapSize);
