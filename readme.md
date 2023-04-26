@@ -14,6 +14,7 @@
 [数组中出现奇数次的某个数 - 00:50 、数组中出现奇数次的某两个数 - 00:56](./src/XOR/index.ts)
 
 [插入排序 1:14](./src/insertSort/index.ts)
+[有序数组中是否存在某个数 1:33](./src/isNumberExistInSortedArray/index.ts)
 
 [局部最小](./src/partMini/index.ts)
 
