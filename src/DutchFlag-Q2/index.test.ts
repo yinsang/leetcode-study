@@ -35,6 +35,7 @@ test("", () => {
     const copyArr = [...arr];
     const flag = Math.floor(Math.random() * 10);
     try {
+      console.log(arr, dutchFlag(arr, flag));
       expect(isDutchFlagArray(dutchFlag(arr, flag), flag)).toBe(true);
     } catch (e) {
       console.log("error key", copyArr, arr, flag);

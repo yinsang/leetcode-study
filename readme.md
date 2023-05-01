@@ -20,9 +20,10 @@
 
 ## 二 认识 O(NlogN)的排序
 
-[数组小和问题](./src/miniSum/index.ts)
+[求给定数组的最大值](./src/getMaxValueFromArray/index.ts)
 
 [归并排序](./src/mergeSort/index.ts)
+[数组小和问题 数组中每个数左边比当前数小的数累加起来的和](./src/miniSum/index.ts)
 
 [逆序数](./src/arrayRevertCount/index.ts)
 

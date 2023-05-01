@@ -9,28 +9,37 @@ const swap = (arr, firstBigIndex, end) => {
  * @param flag
  * @returns
  */
-// 课程中的实现,左侧右挤
-const dutchFlag = (arr, flag) => {
-  // [3,2,3]  =》【2、3、3】
-  // 35674358， 5
-  let flagIndex = 0;
-  let leftIndex = 0;
-  let rightIndex = arr.length - 1;
-  while (flagIndex <= rightIndex) {
-    if (arr[flagIndex] < flag) {
-      if (flagIndex !== leftIndex) {
-        swap(arr, leftIndex, flagIndex);
-      }
-      flagIndex += 1;
-      leftIndex += 1;
-    } else if (arr[flagIndex] === flag) {
-      flagIndex += 1;
+// 课程中的实现
+const dutchFlag = (array, flag) => {
+  let equalLeft = 0;
+  let equalRight = array.length;
+  let index = 0;
+  while (index < equalRight) {
+    const element = array[index];
+    if (element > flag) {
+      swap(array, index, equalRight - 1);
+      equalRight -= 1;
+    } else if (element < flag) {
+      swap(array, index, equalLeft);
+      equalLeft += 1;
+      index += 1;
     } else {
-      // 大于
-      swap(arr, flagIndex, rightIndex);
-      rightIndex -= 1;
+      index += 1;
     }
   }
-  return arr;
+  return array;
 };
+// dutchFlag([5,4,2,1,3],3)
+// |5,4,2,1,3|
+// |3|4215;
+// 4|3|215;
+// 1|3|245;
+// 12|3|45;
+
+// dutchFlag([5,4,2,1,3],3)
+// |3421|5
+// |321|45
+// 2|31|45
+// 21|3|45
+
 export { dutchFlag };
