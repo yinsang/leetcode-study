@@ -30,7 +30,7 @@
 [荷兰国旗问题一](./src/DutchFlag-Q1/index.ts) 两种思路
 给定数组 arr，和一个 num，小于等于的放左边，大于的放右边
 
-[荷兰国旗问题二](./src/DutchFlag-Q2/index.ts)
+[荷兰国旗问题二 1:56:00](./src/DutchFlag-Q2/index.ts)
 给定数组 arr，和一个 num，小于的放左边，等于的放中间，大于的放右边
 
 [快速排序 1.0](./src/QuickSort1.0/index.ts)

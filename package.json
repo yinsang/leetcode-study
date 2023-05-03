@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "current": "jest  --watch ./src/DutchFlag-Q2/index.test.ts",
+    "current": "jest  --watch ./src/QuickSort3.0/index.test.ts",
     "w": "jest --clearCache && jest --watchAll",
     "jest": "jest"
   },
