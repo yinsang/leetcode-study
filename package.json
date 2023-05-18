@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "current": "jest  --watch ./src/longestPalindrome/index.test.ts",
+    "current": "jest  --watch ./src/JSONStringify/index.test.ts",
     "w": "jest --clearCache && jest --watchAll",
     "jest": "jest"
   },
