@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "current": "jest  --watch ./src/longestPalindrome/index.test.ts",
+    "current": "jest  --watch ./src/addNumberThousand/index.test.ts",
+    "create": "generate-react component",
     "w": "jest --clearCache && jest --watchAll",
     "jest": "jest"
   },
@@ -15,6 +16,7 @@
     "@babel/preset-typescript": "^7.21.4",
     "@types/jest": "^28.1.3",
     "eslint": "^8.19.0",
+    "generate-react-cli": "^8.3.0",
     "jest": "^28.1.1"
   }
 }

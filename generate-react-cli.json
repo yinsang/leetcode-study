@@ -1,0 +1,20 @@
+{
+  "usesTypeScript": true,
+  "usesCssModule": false,
+  "usesStyledComponents": false,
+  "cssPreprocessor": "None",
+  "testLibrary": "test",
+  "component": {
+    "default": {
+      "path": "/Users/yinsang/Documents/github-code/leetcode-study/src",
+      "customTemplates": {
+        "component": "/Users/yinsang/Documents/github-code/leetcode-study/templates/index.ts",
+        "test": "/Users/yinsang/Documents/github-code/leetcode-study/templates/index.test.ts"
+      },
+      "withStyle": false,
+      "withTest": true,
+      "withStory": false,
+      "withLazy": false
+    }
+  }
+}
