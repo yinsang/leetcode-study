@@ -1,4 +1,1 @@
-export const deepEqual = (origin) => {
-  //
-  return origin;
-};
+export const deepEqual = (origin, target) => {};

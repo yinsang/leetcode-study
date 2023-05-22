@@ -1,15 +1,31 @@
 import { deepEqual } from ".";
 it("", () => {
-  let maxCount = 2;
-
-  for (let index = 0; index < maxCount; index++) {
-    const arr = Array.from(new Array(10), () =>
-      parseInt(String(Math.random() * 10))
-    );
-    const copyArr = [...arr].sort();
-    expect(deepEqual(1)).toEqual(deepEqual(1));
-
-    expect(arr.length === copyArr.length).toBe(true);
-    expect(arr).toEqual(expect.arrayContaining(copyArr));
-  }
+  const origin = { a: 1 };
+  const target = { a: 1 };
+  expect(deepEqual(origin, target)).toEqual(true);
+  expect(deepEqual(origin, { a: 2 })).toEqual(false);
+  const hasArray = { a: [1, 2, 3] };
+  expect(deepEqual(hasArray, { a: [1, 2, 3] })).toEqual(true);
+  expect(deepEqual(hasArray, { a: [1, 2, 4] })).toEqual(false);
+  const hasObject = { a: { b: 1 } };
+  expect(deepEqual(hasObject, { a: { b: 1 } })).toEqual(true);
+  expect(deepEqual(hasObject, { a: { b: 2 } })).toEqual(false);
+  const hasNull = { a: null };
+  expect(deepEqual(hasNull, { a: null })).toEqual(true);
+  expect(deepEqual(hasNull, { a: undefined })).toEqual(false);
+  const hasUndefined = { a: undefined };
+  expect(deepEqual(hasUndefined, { a: undefined })).toEqual(true);
+  expect(deepEqual(hasUndefined, { a: null })).toEqual(false);
+  const hasFunction = { a: () => {} };
+  expect(deepEqual(hasFunction, { a: () => {} })).toEqual(false);
+  expect(deepEqual(hasFunction, { a: () => 1 })).toEqual(false);
+  const hasSymbol = { a: Symbol() };
+  expect(deepEqual(hasSymbol, { a: Symbol() })).toEqual(false);
+  expect(deepEqual(hasSymbol, { a: Symbol("a") })).toEqual(false);
+  // const hasNaN = { a: NaN };
+  // expect(deepEqual(hasNaN, { a: NaN })).toEqual(true);
+  // expect(deepEqual(hasNaN, { a: 1 })).toEqual(false);
+  const hasInfinity = { a: Infinity };
+  expect(deepEqual(hasInfinity, { a: Infinity })).toEqual(true);
+  expect(deepEqual(hasInfinity, { a: 1 })).toEqual(false);
 });

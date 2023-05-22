@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "current": "jest  --watch ./src/addNumberThousand/index.test.ts",
+    "current": "jest  --watch ./src/deepEqual/index.test.ts",
     "create": "generate-react component",
     "w": "jest --clearCache && jest --watchAll",
     "jest": "jest"
