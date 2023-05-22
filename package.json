@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "current": "jest  --watch ./src/deepEqual/index.test.ts",
     "create": "generate-react component",
+    "current": "jest  --watch ./src/JSONStringify/index.test.ts",
     "w": "jest --clearCache && jest --watchAll",
     "jest": "jest"
   },
