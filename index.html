@@ -1,0 +1,34 @@
+<!-- 使用link效果一致 -->
+<!-- <link rel="stylesheet" href="./index.css"> -->
+<!-- <style>
+  @font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+  }
+
+  body {
+    font-family: "Bitstream Vera Serif Bold";
+  }
+</style> -->
+<script>
+  const link = document.createElement('link');
+  link.href = "http://[::]:8000/index.css";
+  link.rel = "stylesheet";
+  link.onload = () => {
+    console.log(Date.now(), 'lnk onload');
+  }
+  document.head.appendChild(link);
+</script>
+<div>123abc</div>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
+  integrity="sha512-Ujz3g+bKsxf3XrM/ODk7l1rPAQ200CoIVUK9blda/v1UXGaHYnfiClnca63bWq9nFhTzww6wEZiqGrbPwDWNPA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.6.172/pdf.min.js"
+  integrity="sha512-KEoL9wKXt/fhlAfN+ZNXf3pI48aaQE9Qd5fihHY+5n5XLTSnyGJ0uKgUj//V6KAcjFwzAbCYYPKeGlFES/H5Ng=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  console.log(1111);
+  console.log(Date.now(), 'script');
+</script>
