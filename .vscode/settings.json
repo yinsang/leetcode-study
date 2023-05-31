@@ -14,7 +14,7 @@
   "eslint.format.enable": true,
   // 设置js的formatter为eslint
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     // "editor.defaultFormatter": "dbaeumer.vscode-eslint"
