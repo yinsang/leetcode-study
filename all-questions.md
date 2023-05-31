@@ -10,15 +10,16 @@ csr和ssr通用的
 策略1 讲首屏字节降到最小、 将下载时间降到最少
 css架构设计+首屏css内联减少http请求
 js 去除重复代码 代码分割 framework + common + 业务 + 异步加载async defer 
-图片首屏图片 base64 +缓存本地localstorage  iconfont format 懒加载 响应式图片 picture
+图片首屏图片 base64 +
+缓存本地
+localstorage  iconfont format 懒加载 响应式图片 picture
 
 利用可利用的一切缓存或预缓存
 静态资源http强缓存
 
 
 预请求相关
-dns-prefetch
-prefetch preload 
+dns-prefetch prefetch 未来可能会需要 preload 当前
 
 
 接口拆分为首屏和非首屏等
@@ -28,12 +29,38 @@ prefetch preload
 前置接口预取
 webview预加载 block/all
 二访缓存
-csr ssr bssr esr 静态esr
-局域网服务器甚至ip更快、server端以来key的缓存
+csr ssr bssr（并行ssr。csr+客户端接口请求dom） esr（边缘/CDN 节点 类 Node 服务） 静态ssr（server端在CDN节点以key来缓存主文档）
+局域网服务器甚至ip更快、
 另外一些：
 http stream形式 react 18;
 HTTP/2？
 chrome分析
+# 三面
+离职原因
+职业规划
+性格爱好
+
+价值观
+## 技术上做过最难的事+最让你自豪的有哪些？
+我前端简历中写的夸克文库项目预览其中有文字流式预览需要
+----一开始没搞懂
+----去网上看了个答案
+----一试发现这个广为流传的答案是有坑的
+----于是自己看 issue
+----发现还有一个小细节
+----然后解决了
+----谁知道还是在某种 edge case有问题
+----于是自己看规范看源码，搞定
+我（最近的一个时间）在做（怎样的一个产品／程序），这个产品／程序的目的是（帮助用户完成什么事），其中有一个（什么模块），为了实现（什么功能），用到了（什么技术），但是（遇到了什么挑战／难点／bug），我通过（怎样的手段）定位问题所在，问题出现的原因是（简要的点到技术点的描述），我在（至少两个资料来源）上找到了参考，最后基于（怎样的决策标准）决定采用（何种解决方法），运用了（哪种技术），最后成功解决了问题／实现了功能，结果是这个产品／程序（对用户，系统，性能，可用性，资源等产生了何种正面的影响）。下一步，我认为我应该研究（何种更先进的方式），进一步（怎样让产品／程序做得更好）。
+
+业务上最难的
+-美团绑卡优化
+
+技术上最难的
+你做过的项目/解决过的问题， 最让你自豪的有哪些？
+
+架构设计
+设计模式
 
 # yph sdk
 
@@ -48,6 +75,9 @@ SDK需要实现一系列的基础能力 (节点渲染、生命周期、缓存、
 过滤器、解析器、编排器、以及整合器
 
 脚手架 compassjs
+这是一个脚手架大统一项目，目的是能对整个夸克前端几个团队的不同技术栈进行一个规范和统一。
+我主要负责其中的 webpack config配置和redux相关的事。
+
 
 # soft questions
 ## tell me about your self  ## How would you describe yourself? 
@@ -108,7 +138,7 @@ Say no to unreasonable requests.
 
 
 
-## Describe a typical work week.## Describe your work style.
+## Describe a typical work week.
 Monday:
 Check email and respond to any urgent messages.
 Meet with the team to discuss the week's goals and priorities.
@@ -130,7 +160,17 @@ Friday:
 Wrap up any loose ends from the week.
 Plan for the next week.
 Take some time to relax and recharge.
+## Describe your work style.
+I would describe my work style as organized, efficient, and detail-oriented. I am able to work independently and as part of a team, and I am always willing to help others. I am also a quick learner and I am always looking for new challenges.
 
+Here are some specific examples of my work style:
+
+I am organized and efficient. I always keep my work area clean and organized, and I am able to manage my time effectively. I am also able to prioritize my tasks and to work on multiple projects simultaneously.
+I am detail-oriented. I always double-check my work to make sure that it is accurate and error-free. I am also able to identify and correct errors in others' work.
+I am able to work independently and as part of a team. I am able to work independently to complete tasks, and I am also able to work effectively as part of a team to achieve common goals.
+I am always willing to help others. I am always willing to help my coworkers with their work, and I am also willing to help new employees learn the ropes.
+I am a quick learner. I am able to learn new skills and information quickly, and I am always looking for new ways to improve my skills and knowledge.
+I am confident that my work style would be a valuable asset to any company. I am a hard worker and I am always willing to go the extra mile. I am also a team player and I am always willing to help others. I am confident that I can make a significant contribution to any team that I am a part of.
 
 ## Do you work well with other people?
 

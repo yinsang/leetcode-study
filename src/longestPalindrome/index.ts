@@ -1,5 +1,3 @@
-// N 件商品，限重为 maxWeight ； weights 重量数组； values 价值数组；
-//  求给出一个重量空间时最大的value值；
 export  const longestPalindrome = (str)=>{
   const map = {};
   let longElement = ''
