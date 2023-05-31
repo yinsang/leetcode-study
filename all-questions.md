@@ -29,8 +29,7 @@ webview 预加载 block/all
 二访缓存
 
 端结合相关
-csr ssr bssr esr 静态 esr
-局域网服务器甚至 ip 更快、server 端以来 key 的缓存
+csr ssr bssr esr(cdn node) 静态 ssr 局域网服务器甚至 ip 更快、server 端以来 key 的缓存
 另外一些：
 http stream 形式 react 18;
 HTTP/2？
